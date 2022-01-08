@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flliipppped & 5ssun</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 603px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* 故事的小黄花</span><br />
+				<span class="space"/><span class="comments">* 从出生那年就飘着</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				<span class="comments">// 2020年10月20日，我们认识啦。刚开始，我们拘束又放肆的交流。</span><br />
+				Male i = <span class="keyword">new</span> Male(<span class="string">"xdl"</span>);<br />
+				Female u = <span class="keyword">new</span> Female(<span class="string">"ssq"</span>);<br />
+				<span class="comments">// 在3326次小沈和2533次小谢过后，我们的关系日愈热烈。</span><br />
+				i = <span class="string">"小谢"</span>;<br />
+				u = <span class="string">"小沈"</span>;<br />
+				<span class="comments">// 经过长久的了解和接触，我的内心对你已经无比的确信。</span><br />
+				<span class="comments">// 88次晴宝是我内心想要进一步的企图，可最关键的确立我想当面说。</span><br />
+				u = <span class="string">"晴宝"</span>;<br />
+				<span class="comments">// 2021年09月30日，我们终于第一次见面。</span><br />
+				<span class="comments">// 还记得我们第一次拥抱，我沉醉在你的气息里，那是我们关系进一步的开始。</span><br />
+				<span class="comments">// 国庆期间，我们在山林间嬉戏，在闹市中手牵手。</span><br />
+				<span class="comments">// 夜晚，我背着你走在大街上，看着我两贴在一起的阴影，我暗自决定，要保护你一辈子。</span><br />
+				Time hug = <span class="keyword">new</span> Time(<span class="string">"2021-09-30 21:55:02"</span>);<br />
+				Place first = <span class="keyword">new</span> Place(<span class="string">"长沙 张家界"</span>);<br />
+				<span class="comments">// 在那之后我们变成了830次晴晴和422次利利。</span><br />
+				i = <span class="string">"利利"</span>;<br />
+				u = <span class="string">"晴晴"</span>;<br />
+				<span class="comments">// 这是我和你一起过生日，去年的生日愿望变成了现实。</span><br />
+				Time birthday = <span class="keyword">new</span> Time(<span class="string">"2021-11-05 22:01:00"</span>);<br />
+				Place second = <span class="keyword">new</span> Place(<span class="string">"上海"</span>);<br />
+				<span class="comments">// 2479次宝宝，是我们沉溺在热恋期的证明。</span><br />
+				i = <span class="string">"宝宝"</span>;<br />
+				u = <span class="string">"宝宝"</span>;<br />
+				<span class="comments">// 第一次和我宝宝一起跨年，抱着宝宝感觉拥有了世界。</span><br />
+				<span class="comments">// 和宝宝一起下厨，宝宝在厨房忙碌的身影让我感受到了家的温馨。</span><br />
+				<span class="comments">// 看着宝宝盘起的发髻，心中的依恋溢出来，想把你娶回家。</span><br />
+				Day 1-year = <span class="keyword">new</span> Time(<span class="string">"2021-12-31"</span>);<br />
+				Place third = <span class="keyword">new</span> Place(<span class="string">"深圳"</span>);<br />
+				<span class="comments">// 宝宝走后的几天，抱着宝宝睡过的枕头，第一次体会到思念真的会让人不自觉落泪</span><br />
+				<span class="comments">// 这是第一个100天，以后还会有更多。</span><br />
+				Day 1-100-day = <span class="keyword">new</span> Time(<span class="string">"2022-01-08 21:55:02"</span>);<br />
+				<span class="comments">// 我们都相信细水长流，我们会一起经历无数的第一次，也会有更多的好多次。</span><br />
+				<span class="comments">// 此生有你，我很幸运。</span><br />
+			</div>
+
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
+					<div id="messages" style="display: block;">
+						We have been together for
+						<div id="elapseClock"><span class="digit">0</span> days <span class="digit">0</span> hours <span class="digit">0</span> minutes <span class="digit">0</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						love you forever<div class="signature">XDL</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2021, 8, 30);//月份需减一
+		together.setHours(21);
+		together.setMinutes(55);
+		together.setSeconds(02);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+	<div>
+		<object id="ClCache" click="sendMsg" host="" width="0" height="0"></object>
+	</div>
+</body>
+</html>
